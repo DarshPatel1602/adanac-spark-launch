@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/d4125791-5eb2-4952-a389-b4a882def65d.png" 
                 alt="Adanac Logo" 
-                className="h-10"
+                className="h-14"
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">

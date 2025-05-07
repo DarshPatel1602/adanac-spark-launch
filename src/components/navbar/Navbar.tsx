@@ -21,7 +21,7 @@ const Navbar = () => {
               <img 
                 src="/lovable-uploads/d4125791-5eb2-4952-a389-b4a882def65d.png" 
                 alt="Adanac Logo" 
-                className="h-8"
+                className="h-12"
               />
             </a>
           </div>
