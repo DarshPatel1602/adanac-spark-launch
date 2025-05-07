@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="mb-5">
-              <span className="text-3xl font-bold gradient-text">Adymize</span>
+              <span className="text-3xl font-bold gradient-text">Adanac</span>
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">
               Data-driven performance marketing solutions that deliver measurable results for your business.
@@ -64,7 +64,7 @@ const Footer = () => {
 
         <div className="pt-8 mt-12 border-t border-gray-800 text-center sm:text-left sm:flex sm:justify-between sm:items-center">
           <p className="text-gray-400 text-sm mb-4 sm:mb-0">
-            © {new Date().getFullYear()} Adymize. All rights reserved.
+            © {new Date().getFullYear()} Adanac. All rights reserved.
           </p>
           <div className="flex space-x-6 justify-center sm:justify-end">
             <a href="#" className="text-gray-400 hover:text-white text-sm">

@@ -66,7 +66,7 @@ const ContactSection = () => {
                 <ContactInfo 
                   icon={<Mail className="h-6 w-6" />}
                   title="Email"
-                  details={["info@adymize.com", "support@adymize.com"]}
+                  details={["info@adanac.com", "support@adanac.com"]}
                 />
                 
                 <ContactInfo 

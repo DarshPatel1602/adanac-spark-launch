@@ -18,7 +18,7 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold gradient-text">Adymize</span>
+              <span className="text-2xl font-bold gradient-text">Adanac</span>
             </a>
           </div>
 
