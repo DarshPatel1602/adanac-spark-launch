@@ -18,7 +18,11 @@ const Navbar = () => {
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
-              <span className="text-2xl font-bold gradient-text">Adanac</span>
+              <img 
+                src="/lovable-uploads/d4125791-5eb2-4952-a389-b4a882def65d.png" 
+                alt="Adanac Logo" 
+                className="h-8"
+              />
             </a>
           </div>
 

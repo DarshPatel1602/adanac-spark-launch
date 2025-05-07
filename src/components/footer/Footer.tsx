@@ -9,7 +9,11 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
           <div>
             <div className="mb-5">
-              <span className="text-3xl font-bold gradient-text">Adanac</span>
+              <img 
+                src="/lovable-uploads/d4125791-5eb2-4952-a389-b4a882def65d.png" 
+                alt="Adanac Logo" 
+                className="h-10"
+              />
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">
               Data-driven performance marketing solutions that deliver measurable results for your business.
