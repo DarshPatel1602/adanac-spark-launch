@@ -59,7 +59,7 @@ const Footer = () => {
                 placeholder="Your email"
                 className="bg-gray-800 text-white px-4 py-2 rounded-l outline-none flex-1"
               />
-              <button className="bg-adymize-blue px-4 py-2 rounded-r hover:bg-blue-700 transition">
+              <button className="bg-adanac-blue px-4 py-2 rounded-r hover:bg-blue-700 transition">
                 Subscribe
               </button>
             </form>
@@ -88,7 +88,7 @@ const SocialIcon = ({ icon }: { icon: React.ReactNode }) => {
   return (
     <a
       href="#"
-      className="bg-gray-800 rounded-full h-10 w-10 flex items-center justify-center hover:bg-adymize-blue transition"
+      className="bg-gray-800 rounded-full h-10 w-10 flex items-center justify-center hover:bg-adanac-blue transition"
     >
       {icon}
     </a>

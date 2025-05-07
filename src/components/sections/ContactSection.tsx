@@ -77,12 +77,12 @@ const ContactSection = () => {
               </div>
             </div>
             
-            <Card className="p-6 mt-8 bg-gradient-to-r from-adymize-blue to-adymize-purple text-white">
+            <Card className="p-6 mt-8 bg-gradient-to-r from-adanac-blue to-adanac-purple text-white">
               <h4 className="text-xl font-semibold mb-4">Ready to get started?</h4>
               <p className="mb-6">
                 Schedule a free 30-minute consultation with our marketing experts.
               </p>
-              <Button className="bg-white text-adymize-blue hover:bg-white/90">
+              <Button className="bg-white text-adanac-blue hover:bg-white/90">
                 Book a Call
               </Button>
             </Card>
@@ -104,7 +104,7 @@ const ContactInfo = ({
 }) => {
   return (
     <div className="flex">
-      <div className="flex-shrink-0 h-12 w-12 bg-adymize-grey rounded-full flex items-center justify-center text-adymize-blue mr-4">
+      <div className="flex-shrink-0 h-12 w-12 bg-adanac-grey rounded-full flex items-center justify-center text-adanac-blue mr-4">
         {icon}
       </div>
       <div>

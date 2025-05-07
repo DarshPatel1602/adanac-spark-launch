@@ -33,7 +33,7 @@ const HeroSection = () => {
           </div>
           <div className="md:w-1/2 animate-fade-in">
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-adymize-blue to-adymize-purple rounded-lg blur-xl opacity-50"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-adanac-blue to-adanac-purple rounded-lg blur-xl opacity-50"></div>
               <div className="bg-white rounded-lg p-4 relative">
                 <img 
                   src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" 
@@ -41,7 +41,7 @@ const HeroSection = () => {
                   className="w-full h-auto rounded shadow-lg"
                 />
               </div>
-              <div className="absolute -bottom-8 -right-8 bg-adymize-purple/10 w-40 h-40 rounded-full blur-3xl -z-10"></div>
+              <div className="absolute -bottom-8 -right-8 bg-adanac-purple/10 w-40 h-40 rounded-full blur-3xl -z-10"></div>
             </div>
           </div>
         </div>

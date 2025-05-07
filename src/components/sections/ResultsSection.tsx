@@ -48,7 +48,7 @@ const performanceData = [
 
 const testimonials = [
   {
-    text: "Adymize transformed our marketing strategy. We've seen a 215% increase in qualified leads since partnering with them.",
+    text: "Adanac transformed our marketing strategy. We've seen a 215% increase in qualified leads since partnering with them.",
     author: "Michael Chen",
     company: "TechVision Inc.",
   },
@@ -58,7 +58,7 @@ const testimonials = [
     company: "Retail Solutions",
   },
   {
-    text: "The team at Adymize consistently delivers results. Our e-commerce revenue has grown 150% year-over-year thanks to their strategies.",
+    text: "The team at Adanac consistently delivers results. Our e-commerce revenue has grown 150% year-over-year thanks to their strategies.",
     author: "David Miller",
     company: "ModernCart",
   },
@@ -139,7 +139,7 @@ const ResultsSection = () => {
           {testimonials.map((testimonial, index) => (
             <Card key={index} className="p-6 shadow-lg border-none bg-gradient-to-br from-white to-gray-50">
               <div className="mb-4">
-                <svg className="h-8 w-8 text-adymize-blue" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="h-8 w-8 text-adanac-blue" fill="currentColor" viewBox="0 0 24 24">
                   <path d="M14.017 18L14.017 10.609C14.017 4.905 17.748 1.039 23 0L23.995 2.151C21.563 3.068 20 5.789 20 8H24V18H14.017ZM0 18V10.609C0 4.905 3.748 1.038 9 0L9.996 2.151C7.563 3.068 6 5.789 6 8H9.983L9.983 18L0 18Z" />
                 </svg>
               </div>

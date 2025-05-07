@@ -14,38 +14,38 @@ const services = [
   {
     title: "Performance Marketing",
     description: "Data-driven campaigns that maximize your ROI across paid channels.",
-    icon: <LineChart className="h-10 w-10 text-adymize-blue" />,
+    icon: <LineChart className="h-10 w-10 text-adanac-blue" />,
   },
   {
     title: "PPC Management",
     description: "Strategic pay-per-click management for Google, Facebook, and beyond.",
-    icon: <BarChart2 className="h-10 w-10 text-adymize-blue" />,
+    icon: <BarChart2 className="h-10 w-10 text-adanac-blue" />,
   },
   {
     title: "Conversion Rate Optimization",
     description: "Turn more visitors into customers through data-backed optimization.",
-    icon: <Zap className="h-10 w-10 text-adymize-blue" />,
+    icon: <Zap className="h-10 w-10 text-adanac-blue" />,
   },
   {
     title: "SEO Services",
     description: "Increase organic visibility and drive qualified traffic to your website.",
-    icon: <Search className="h-10 w-10 text-adymize-blue" />,
+    icon: <Search className="h-10 w-10 text-adanac-blue" />,
   },
   {
     title: "Analytics & Reporting",
     description: "In-depth analysis and transparent reporting on your marketing performance.",
-    icon: <BarChart className="h-10 w-10 text-adymize-blue" />,
+    icon: <BarChart className="h-10 w-10 text-adanac-blue" />,
   },
   {
     title: "Social Media Marketing",
     description: "Build brand awareness and engagement across major social platforms.",
-    icon: <MessageSquare className="h-10 w-10 text-adymize-blue" />,
+    icon: <MessageSquare className="h-10 w-10 text-adanac-blue" />,
   },
 ];
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 bg-adymize-grey">
+    <section id="services" className="py-20 bg-adanac-grey">
       <div className="container mx-auto px-4 md:px-6">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>

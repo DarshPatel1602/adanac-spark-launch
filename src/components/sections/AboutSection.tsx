@@ -7,28 +7,28 @@ const values = [
   {
     title: "Data-Driven",
     description: "We base all marketing decisions on comprehensive data analysis, not guesswork.",
-    icon: <TrendingUp className="h-8 w-8 text-adymize-blue" />,
+    icon: <TrendingUp className="h-8 w-8 text-adanac-blue" />,
   },
   {
     title: "Results-Focused",
     description: "Our success is measured by the tangible results we deliver for our clients.",
-    icon: <Target className="h-8 w-8 text-adymize-blue" />,
+    icon: <Target className="h-8 w-8 text-adanac-blue" />,
   },
   {
     title: "Transparent",
     description: "We provide clear, honest reporting so you always know where your marketing stands.",
-    icon: <Award className="h-8 w-8 text-adymize-blue" />,
+    icon: <Award className="h-8 w-8 text-adanac-blue" />,
   },
   {
     title: "Collaborative",
     description: "We work as an extension of your team, aligning with your business goals.",
-    icon: <Users className="h-8 w-8 text-adymize-blue" />,
+    icon: <Users className="h-8 w-8 text-adanac-blue" />,
   },
 ];
 
 const AboutSection = () => {
   return (
-    <section id="about" className="py-20 bg-adymize-grey">
+    <section id="about" className="py-20 bg-adanac-grey">
       <div className="container mx-auto px-4 md:px-6">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div>
@@ -46,7 +46,7 @@ const AboutSection = () => {
           
           <div>
             <div className="relative">
-              <div className="absolute -inset-1 bg-gradient-to-r from-adymize-blue to-adymize-purple rounded-lg blur-xl opacity-50"></div>
+              <div className="absolute -inset-1 bg-gradient-to-r from-adanac-blue to-adanac-purple rounded-lg blur-xl opacity-50"></div>
               <div className="bg-white rounded-lg p-4 relative">
                 <img 
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=800" 
