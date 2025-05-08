@@ -12,7 +12,7 @@ const Footer = () => {
               <img 
                 src="/lovable-uploads/ddab4652-3b97-4ec5-94a7-6216b5c7797a.png" 
                 alt="Adanac Logo" 
-                className="h-16 brightness-0 invert"
+                className="h-16"
               />
             </div>
             <p className="text-gray-400 mb-6 max-w-xs">
