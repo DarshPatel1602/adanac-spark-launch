@@ -17,7 +17,7 @@ const CTASection = () => {
             Join hundreds of businesses that have achieved measurable growth through our data-driven marketing strategies.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button className="bg-white text-adanac-blue hover:bg-white/90 transition text-base px-8 py-6" size="lg">
+            <Button className="bg-white text-adanac-blue hover:bg-white/90 transition-opacity text-base px-8 py-6" size="lg">
               Schedule a Free Consultation
             </Button>
             <Button variant="outline" className="border-white text-white hover:bg-white/10 text-base px-8 py-6" size="lg">
