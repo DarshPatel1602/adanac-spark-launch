@@ -45,11 +45,11 @@ const services = [
 
 const ServicesSection = () => {
   return (
-    <section id="services" className="py-20 bg-adanac-grey">
-      <div className="container mx-auto px-4 md:px-6">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Services</h2>
-          <p className="text-lg text-gray-700 max-w-3xl mx-auto">
+    <section id="services" className="py-24 bg-gradient-to-b from-white to-adanac-silver/20">
+      <div className="container mx-auto">
+        <div className="text-center mb-16 animate-on-scroll">
+          <h2 className="font-heading font-bold mb-5">Our Services</h2>
+          <p className="text-lg text-gray-700 max-w-3xl mx-auto leading-relaxed">
             We provide comprehensive digital marketing solutions that drive growth
             and deliver measurable results for your business.
           </p>
@@ -83,10 +83,13 @@ const ServiceCard = ({
   index: number
 }) => {
   return (
-    <Card className="p-6 hover:shadow-lg transition-shadow border-none bg-white animate-fade-in" style={{ animationDelay: `${index * 0.1}s` }}>
-      <div className="mb-4">{icon}</div>
-      <h3 className="text-xl font-semibold mb-3">{title}</h3>
-      <p className="text-gray-700">{description}</p>
+    <Card 
+      className="p-8 hover:shadow-elevated transition-all duration-300 border-none bg-white animate-on-scroll" 
+      style={{ transitionDelay: `${index * 100}ms` }}
+    >
+      <div className="mb-6 bg-adanac-silver/30 w-16 h-16 rounded-lg flex items-center justify-center">{icon}</div>
+      <h3 className="text-xl font-semibold mb-4">{title}</h3>
+      <p className="text-gray-700 leading-relaxed">{description}</p>
     </Card>
   );
 };

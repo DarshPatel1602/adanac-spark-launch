@@ -63,18 +63,33 @@ export default {
 					border: 'hsl(var(--sidebar-border))',
 					ring: 'hsl(var(--sidebar-ring))'
 				},
-				adymize: {
+				adanac: {
 					blue: '#0D4BA0',
 					purple: '#564DC8',
 					lightblue: '#38B6FF',
 					darkblue: '#091152',
-					grey: '#F5F5F5'
+					grey: '#F5F5F5',
+					charcoal: '#2C3E50',
+					slate: '#34495E',
+					silver: '#ECF0F1',
+					navy: '#1A365D'
 				}
+			},
+			fontFamily: {
+				sans: ['Inter', 'system-ui', 'sans-serif'],
+				heading: ['Poppins', 'sans-serif'],
+				body: ['Inter', 'sans-serif']
 			},
 			borderRadius: {
 				lg: 'var(--radius)',
 				md: 'calc(var(--radius) - 2px)',
 				sm: 'calc(var(--radius) - 4px)'
+			},
+			boxShadow: {
+				'soft': '0 4px 20px rgba(0, 0, 0, 0.05)',
+				'elevated': '0 10px 30px rgba(0, 0, 0, 0.08)',
+				'button': '0 4px 6px rgba(13, 75, 160, 0.12)',
+				'card': '0 10px 25px -5px rgba(0, 0, 0, 0.05)',
 			},
 			keyframes: {
 				'accordion-down': {
@@ -119,6 +134,7 @@ export default {
 				'accordion-up': 'accordion-up 0.2s ease-out',
 				'fade-in': 'fade-in 0.7s ease-out',
 				'fade-out': 'fade-out 0.7s ease-out',
+				'slow-fade-in': 'fade-in 1.2s ease-out',
 			},
 			backgroundImage: {
 				'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',

@@ -28,10 +28,35 @@ const Index = () => {
         });
       });
     });
+
+    // Add scroll animation
+    const observerOptions = {
+      root: null,
+      rootMargin: '0px',
+      threshold: 0.15
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+        }
+      });
+    }, observerOptions);
+
+    document.querySelectorAll('.animate-on-scroll').forEach(elem => {
+      observer.observe(elem);
+    });
+
+    return () => {
+      document.querySelectorAll('.animate-on-scroll').forEach(elem => {
+        observer.unobserve(elem);
+      });
+    };
   }, []);
   
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen bg-white">
       <Navbar />
       <main>
         <HeroSection />

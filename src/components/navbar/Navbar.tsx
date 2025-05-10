@@ -1,20 +1,37 @@
 
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isScrolled, setIsScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      if (window.scrollY > 20) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
 
   const toggleMenu = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
   return (
-    <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur-sm z-50 border-b border-gray-100">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="flex items-center justify-between h-16">
+    <header className={cn(
+      "fixed top-0 left-0 right-0 z-50 transition-all duration-300",
+      isScrolled ? "bg-white shadow-soft py-3" : "bg-transparent py-5"
+    )}>
+      <div className="container mx-auto">
+        <div className="flex items-center justify-between">
           {/* Logo */}
           <div className="flex-shrink-0">
             <a href="/" className="flex items-center">
@@ -27,7 +44,7 @@ const Navbar = () => {
           </div>
 
           {/* Desktop Navigation */}
-          <nav className="hidden md:flex space-x-8">
+          <nav className="hidden md:flex items-center space-x-10">
             <NavLink href="#home">Home</NavLink>
             <NavLink href="#services">Services</NavLink>
             <NavLink href="#results">Results</NavLink>
@@ -61,18 +78,20 @@ const Navbar = () => {
       {/* Mobile Menu */}
       <div
         className={cn(
-          "md:hidden",
-          isMenuOpen ? "block" : "hidden"
+          "md:hidden absolute top-full left-0 right-0 transition-all duration-300 ease-in-out",
+          isMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-4 pointer-events-none"
         )}
       >
-        <div className="px-2 pt-2 pb-3 space-y-1 sm:px-3 bg-white shadow-lg">
-          <MobileNavLink href="#home" onClick={toggleMenu}>Home</MobileNavLink>
-          <MobileNavLink href="#services" onClick={toggleMenu}>Services</MobileNavLink>
-          <MobileNavLink href="#results" onClick={toggleMenu}>Results</MobileNavLink>
-          <MobileNavLink href="#about" onClick={toggleMenu}>About</MobileNavLink>
-          <MobileNavLink href="#contact" onClick={toggleMenu}>Contact</MobileNavLink>
-          <div className="pt-2">
-            <Button className="btn-gradient w-full">Get Started</Button>
+        <div className="bg-white shadow-elevated py-5 px-6 mx-4 my-2 rounded-lg">
+          <div className="flex flex-col space-y-4">
+            <MobileNavLink href="#home" onClick={toggleMenu}>Home</MobileNavLink>
+            <MobileNavLink href="#services" onClick={toggleMenu}>Services</MobileNavLink>
+            <MobileNavLink href="#results" onClick={toggleMenu}>Results</MobileNavLink>
+            <MobileNavLink href="#about" onClick={toggleMenu}>About</MobileNavLink>
+            <MobileNavLink href="#contact" onClick={toggleMenu}>Contact</MobileNavLink>
+            <div className="pt-4">
+              <Button className="btn-gradient w-full">Get Started</Button>
+            </div>
           </div>
         </div>
       </div>
@@ -84,7 +103,7 @@ const NavLink = ({ href, children }: { href: string, children: React.ReactNode }
   return (
     <a
       href={href}
-      className="text-gray-800 hover:text-adanac-blue font-medium transition-colors"
+      className="text-gray-800 font-medium transition-all hover:text-adanac-blue relative after:content-[''] after:absolute after:w-full after:scale-x-0 after:h-0.5 after:bottom-0 after:left-0 after:bg-adanac-blue after:origin-bottom-right after:transition-transform after:duration-300 hover:after:scale-x-100 hover:after:origin-bottom-left"
     >
       {children}
     </a>
@@ -95,7 +114,7 @@ const MobileNavLink = ({ href, children, onClick }: { href: string, children: Re
   return (
     <a
       href={href}
-      className="block px-3 py-2 text-base font-medium text-gray-800 hover:bg-gray-50 rounded-md"
+      className="block px-3 py-2 text-base font-medium text-gray-800 hover:text-adanac-blue hover:bg-gray-50 rounded-md transition-colors"
       onClick={onClick}
     >
       {children}
