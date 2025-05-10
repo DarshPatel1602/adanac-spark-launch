@@ -60,19 +60,19 @@ const ContactSection = () => {
                 <ContactInfo 
                   icon={<MapPin className="h-6 w-6" />}
                   title="Address"
-                  details={["123 Marketing Avenue", "San Francisco, CA 94105"]}
+                  details={["E10, Green Glen Layout, Outer Ring Road", "Bellandur, Bengaluru, Karnataka, India - 560103"]}
                 />
                 
                 <ContactInfo 
                   icon={<Mail className="h-6 w-6" />}
                   title="Email"
-                  details={["info@adanac.com", "support@adanac.com"]}
+                  details={["info@adanac.live", "support@adanac.live"]}
                 />
                 
                 <ContactInfo 
                   icon={<Phone className="h-6 w-6" />}
                   title="Phone"
-                  details={["+1 (555) 123-4567"]}
+                  details={["+91 9998909758"]}
                 />
               </div>
             </div>

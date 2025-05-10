@@ -73,15 +73,15 @@ const Footer = () => {
             <div className="flex flex-col md:flex-row gap-4 md:gap-8 text-gray-400 text-sm">
               <div className="flex items-center">
                 <MapPin className="h-4 w-4 mr-2" />
-                <span>123 Marketing Avenue, San Francisco</span>
+                <span>E10, Green Glen Layout, Outer Ring Road, Bellandur, Bengaluru, Karnataka, India - 560103</span>
               </div>
               <div className="flex items-center">
                 <Mail className="h-4 w-4 mr-2" />
-                <a href="mailto:info@adanac.com" className="hover:text-white transition-colors">info@adanac.com</a>
+                <a href="mailto:info@adanac.live" className="hover:text-white transition-colors">info@adanac.live</a>
               </div>
               <div className="flex items-center">
                 <Phone className="h-4 w-4 mr-2" />
-                <a href="tel:+15551234567" className="hover:text-white transition-colors">+1 (555) 123-4567</a>
+                <a href="tel:+919998909758" className="hover:text-white transition-colors">+91 9998909758</a>
               </div>
             </div>
             
