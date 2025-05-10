@@ -1,4 +1,3 @@
-
 import React from "react";
 import { 
   AreaChart, 
@@ -38,11 +37,6 @@ const performanceData = [
     month: "May",
     ROI: 280,
     Conversions: 85,
-  },
-  {
-    month: "Jun",
-    ROI: 340,
-    Conversions: 90,
   },
 ];
 
